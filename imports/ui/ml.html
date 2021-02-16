@@ -1,0 +1,46 @@
+<template name="ml">
+  <div class="container ml-body">
+    <div class="row ml-edit">
+      <div class="col l6 m12 s12 ">
+        <canvas id="myChart" width="350px" height="350px"></canvas>
+      </div>
+      <div class="col l6 m12 s12">
+        <header>
+          <h1>Input comment:</h1>
+          <label for='text'> Comment </label>
+          <input id="text" type="text"/>
+          <a class="waves-effect waves-light btn-large center teal add"><i class="material-icons right"></i>Add</a>
+        </header>
+      </div>
+    </div>
+
+    <div class="row ml-table">
+      <table class="highlight">
+      <thead>
+        <tr class="row">
+            <th class="col s7">Text</th>
+            <th class="col s3">sentimen</th>
+            <th class="col s2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each comments}}
+        <tr class="row comment-table">
+          <td class="col s7 flow-text">{{text}}</td>
+          <td class="col s3">{{sentiment}}</td>
+          <td class="col s2">
+            <a class="waves-effect waves-light btn-small center red delete hide-on-small-only">
+              <i class="material-icons hide-on-small-only">delete_forever</i>
+              Delete
+            </a>
+            <a class="waves-effect waves-light btn-floating btn-small center red delete hide-on-med-and-up">
+              <i class="material-icons hide-on-med-and-up">delete_forever</i>
+            </a>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    </div>
+  </div>
+</template>

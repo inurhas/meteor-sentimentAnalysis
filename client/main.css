@@ -1,0 +1,25 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.main-text{
+  height: 85vh;
+  background-image:url("https://learnlinky.com/wp-content/uploads/2018/01/human-computer-interaction.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ml-body{
+  height: 95vh;
+
+}
+
+.ml-edit{
+  height: 35%;
+}
+
+.ml-table{
+  height: 60%;
+}
